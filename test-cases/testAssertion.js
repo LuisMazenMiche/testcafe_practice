@@ -75,17 +75,6 @@ Reload the page and verify the modified device has the new name.
 
     */    
 
-test.skip('check Selector element ', async t =>{
-    //I created this test to try to select an specific device but it failed. unfurtunetly.
-    //The nodes where not exposed. It was really hard to select the device
-    const trynumber2 = Selector('div.list-devices').child(-1).child(0).child(0).withText('new Device test')
-    const deviceName = Selector('.list-devices').child(-1).find('.device-name')
-    const deviceName2 = Selector('.device-name')
-    //const devicelist = Selector('.list-devices > div > div > span').withAttribute()
-        await t 
-            .expect(trynumber2).eql('');
-                
-    });
 
 
 

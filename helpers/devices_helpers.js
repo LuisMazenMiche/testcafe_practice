@@ -41,6 +41,5 @@ export async function getDevicesUI(inex){
             .child('spam').withExactText(devicesNames[i]);
         //await t.expect(device).exists()
         console.log('Dispositivo name ' + devicesNames[i] + 'Existe')   
-    }
-    return 
+    } 
 }
